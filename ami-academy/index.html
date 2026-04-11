@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AMI Academy — AI Prompt Packs, Tools & Downloads</title>
+  <title>AMI Academy - AI Prompt Packs, Tools & Downloads</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
@@ -152,65 +152,9 @@
     }
 
     /* ===== Top bar / logo ===== */
-    .topbar {
-      position: absolute;
-      top: 28px;
-      left: 0;
-      right: 0;
-      z-index: 5;
-    }
-
-    .topbar .container {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 16px;
-    }
-
-    .topbar .topbar-badge {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      white-space: nowrap;
-      margin: 0;
-    }
-
-    .logo-link {
-      display: inline-flex;
-      align-items: center;
-      padding: 6px;
-      border-radius: 12px;
-      background: rgba(8, 8, 20, 0.75);
-      border: 1px solid var(--border-strong);
-      backdrop-filter: blur(10px);
-      transition: transform .2s ease, border-color .2s ease, box-shadow .3s ease;
-      box-shadow: 0 0 24px -10px rgba(168, 85, 247, .35);
-    }
-
-    .logo-link:hover {
-      transform: translateY(-1px);
-      border-color: rgba(168, 85, 247, .55);
-      box-shadow: 0 0 30px -8px rgba(168, 85, 247, .55);
-    }
-
-    .logo-mark {
-      width: 32px;
-      height: 32px;
-      border-radius: 9px;
-      display: grid;
-      place-items: center;
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: .02em;
-      color: #020207;
-      background: linear-gradient(135deg, #22d3ee 0%, #a855f7 100%);
-      box-shadow: 0 0 18px -4px rgba(168, 85, 247, .6), inset 0 0 0 1px rgba(255, 255, 255, .15);
-    }
-
     /* ===== HERO ===== */
     .hero {
-      padding: 120px 0 0;
+      padding: 120px 0 80px;
       text-align: center;
       position: relative
     }
@@ -332,7 +276,7 @@
     .hero p.sub {
       color: var(--muted);
       max-width: 680px;
-      margin: 0 auto 8px;
+      margin: 0 auto 32px;
       font-size: 15px
     }
 
@@ -507,7 +451,7 @@
       box-shadow: 0 0 20px -8px rgba(16, 185, 129, .5)
     }
 
-    /* ===== Product grid (tiles) — built on the same card language ===== */
+    /* ===== Product grid (tiles), built on the same card language ===== */
     .product-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -756,7 +700,7 @@
 
     /* ===== Membership feature (top priority) ===== */
     .membership-section {
-      padding: 8px 0 60px;
+      padding: 0 0 60px;
       position: relative;
     }
 
@@ -1032,7 +976,7 @@
       }
 
       .membership-section {
-        padding: 10px 0 40px;
+        padding: 0 0 40px;
       }
 
       .membership-card {
@@ -1072,7 +1016,7 @@
       }
 
       .hero {
-        padding: 80px 0 0
+        padding: 80px 0 60px
       }
 
       .membership-card {
@@ -1115,14 +1059,11 @@
   </div>
   <div class="bg-noise"></div>
 
-  <!-- TOP BAR -->
-  <div class="topbar">
-    <div class="badge topbar-badge"><span class="rec-dot"></span>AMI Academy · Tools & Downloads</div>
-  </div>
-
   <!-- HERO -->
   <header class="hero">
     <div class="container">
+      <div class="badge reveal"><span class="rec-dot"></span>AMI Academy · Tools & Downloads</div>
+
       <h1 class="hero-title reveal">
         Level Up With<br />
         <span class="grad">AI Prompt Packs,<br />Tools & Blueprints</span>
@@ -1130,7 +1071,7 @@
 
       <p class="lead reveal">
         Ready-to-use <span class="em">prompt packs, automation kits, and digital playbooks</span>
-        to help creators, founders, and operators ship faster with AI—no agency, no dev team required.
+        to help creators, founders, and operators ship faster with AI. No agency, no dev team required.
       </p>
 
       <p class="sub reveal">
@@ -1153,8 +1094,8 @@
               AMI Academy <span class="grad">Membership</span>
             </h2>
             <p class="membership-sub">
-              Get <span class="em">unlimited access</span> to every prompt pack, tool, and future drop —
-              one subscription, everything unlocked.
+              Get <span class="em">unlimited access</span> to every prompt pack, tool, and future drop.
+              One subscription, everything unlocked.
             </p>
             <ul class="value-list">
               <li>Unlimited access to all current products</li>
@@ -1188,7 +1129,7 @@
       <div class="section-divider reveal"></div>
       <p class="section-desc reveal">
         Full <span class="em">programs, trading agents, scrapers, and outreach automations</span> to
-        help you scale — <span class="accent">build, prospect, and close</span> without the manual grind.
+        help you scale: <span class="accent">build, prospect, and close</span> without the manual grind.
       </p>
 
       <div class="product-grid">
@@ -1200,7 +1141,7 @@
           </div>
           <h3>Free Tutorials</h3>
           <p class="product-desc">Step-by-step walkthroughs showing how to build, deploy, and run
-            AI-powered tools using Claude Code — inside Antigravity and directly from your terminal.</p>
+            AI-powered tools using Claude Code, inside Antigravity and directly from your terminal.</p>
           <div class="product-footer">
             <a class="btn-tile" href="#">
               <span>Start Learning</span>
@@ -1216,7 +1157,7 @@
           </div>
           <h3>AI Algo Stock Trading Agent</h3>
           <p class="product-desc">AI-powered trading system that scans the market, identifies
-            high-probability setups, and executes with built-in risk management—so you can trade like
+            high-probability setups, and executes with built-in risk management, so you can trade like
             a pro without staring at charts all day.</p>
           <div class="product-footer">
             <a class="btn-tile" href="#">
@@ -1233,7 +1174,7 @@
           </div>
           <h3>AI Algo Forex Trading Agent</h3>
           <p class="product-desc">24/7 forex trading automation that detects momentum shifts, tracks
-            macro trends, and executes precision entries across currency pairs—built for consistency
+            macro trends, and executes precision entries across currency pairs, built for consistency
             in volatile markets.</p>
           <div class="product-footer">
             <a class="btn-tile" href="#">
@@ -1250,7 +1191,7 @@
           </div>
           <h3>AI Algo Crypto Trading Agent</h3>
           <p class="product-desc">Always-on crypto agent that monitors volatility, volume, and trend
-            shifts in real time—automatically capitalizing on opportunities while you're offline.</p>
+            shifts in real time, automatically capitalizing on opportunities while you're offline.</p>
           <div class="product-footer">
             <a class="btn-tile" href="#">
               <span>Buy Now</span>
@@ -1265,7 +1206,7 @@
             <span class="price-pill">$79</span>
           </div>
           <h3>AI Algo Futures Trading Agent</h3>
-          <p class="product-desc">Advanced AI system designed for futures markets—combining
+          <p class="product-desc">Advanced AI system designed for futures markets, combining
             high-speed execution, smart position sizing, and risk controls to capture moves without
             emotional trading.</p>
           <div class="product-footer">
@@ -1382,7 +1323,7 @@
       <h2 class="reveal">More Drops<br />Coming <span class="grad">Soon</span></h2>
       <p class="reveal">
         New prompt packs and tools ship every month. Head back to the main site to explore AMI's
-        enterprise AI platform—or keep an eye on this page for the next drop.
+        enterprise AI platform, or keep an eye on this page for the next drop.
       </p>
       <div class="reveal">
         <a class="back-link" href="../index.html">
