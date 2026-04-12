@@ -336,7 +336,7 @@
     margin:0 auto 22px;font-weight:800;font-size:22px;color:#fff;
     position:relative;
   }
-  .why-num span{position:relative;z-index:2}
+  .why-num span{position:relative;z-index:2;color:#fff}
   .why-num::before{
     content:"";position:absolute;inset:0;border-radius:50%;
     box-shadow:0 0 40px -5px currentColor, 0 0 60px -10px currentColor;
@@ -380,6 +380,22 @@
   .cta-section .footer-tag{
     margin-top:32px;font-size:11px;color:#5a5f85;letter-spacing:.18em;
     text-transform:uppercase;position:relative;
+  }
+
+  /* Back link */
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .02em;
+    transition: color .2s ease, transform .2s ease;
+  }
+  .back-link:hover {
+    color: #fff;
+    transform: translateX(3px);
   }
 
   /* ===== Reveal animations ===== */
@@ -631,6 +647,12 @@
       <div class="reveal">
         <a class="btn btn-primary" href="https://calendly.com/theadventurefactory424/30min?month=2026-04" target="_blank" rel="noopener">
           <span>Schedule a Consultation</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+      <div style="margin-top:18px" class="reveal">
+        <a class="back-link" href="https://automatemyinfrastructure.com/ami-academy/">
+          <span>Go to AMI Academy</span>
           <span class="arrow">→</span>
         </a>
       </div>
