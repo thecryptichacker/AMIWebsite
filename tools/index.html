@@ -749,6 +749,53 @@
       gap: 10px;
     }
 
+    /* ===== Free trial banner (flagship) ===== */
+    .trial-banner {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: -4px 0 18px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      background: linear-gradient(90deg, rgba(16, 185, 129, 0.12), rgba(34, 211, 238, 0.10));
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      box-shadow: 0 0 24px -10px rgba(16, 185, 129, 0.5), inset 0 0 18px rgba(16, 185, 129, 0.04);
+      position: relative;
+    }
+
+    .trial-banner .trial-icon {
+      width: 30px;
+      height: 30px;
+      flex-shrink: 0;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      font-size: 15px;
+      font-weight: 800;
+      color: #020207;
+      background: linear-gradient(135deg, #34d399, #22d3ee);
+      box-shadow: 0 0 14px -4px rgba(52, 211, 153, 0.7);
+    }
+
+    .trial-banner .trial-text {
+      font-size: 13px;
+      color: #d6f5e7;
+      line-height: 1.45;
+    }
+
+    .trial-banner .trial-text strong {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .trial-banner .trial-text .accent {
+      background: linear-gradient(90deg, #34d399, #22d3ee);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-weight: 800;
+    }
+
     /* ===== Coming Soon tiles ===== */
     .product-card.coming-soon {
       opacity: 0.92;
@@ -867,7 +914,7 @@
             <div class="feature-icon ic-cyan">◉</div>
             <div class="head-right">
               <span class="flagship-chip">&#9733; Flagship</span>
-              <span class="price-pill">$49</span>
+              <span class="price-pill">$29 per Month</span>
             </div>
           </div>
 
@@ -875,9 +922,18 @@
           <p class="product-desc">Flagship MCP integration that connects Claude with TradingView
             through a polished UI, giving you seamless chart-aware AI analysis, setups, and
             execution support inside one workflow. Limited-time launch price.</p>
+
+          <div class="trial-banner">
+            <div class="trial-icon">&#10003;</div>
+            <div class="trial-text">
+              <span class="accent">Free 3-Day Trial</span> on signup &mdash;
+              <strong>no charge until day 4</strong>, cancel anytime.
+            </div>
+          </div>
+
           <div class="product-footer">
-            <a class="btn-tile" href="https://payhip.com/b/ip5QR">
-              <span>Get Access</span>
+            <a class="btn-tile" href="https://claudeview.io/">
+              <span>Start Free Trial</span>
               <span class="arrow">&rarr;</span>
             </a>
           </div>
